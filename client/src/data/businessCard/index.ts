@@ -1,0 +1,1 @@
+export { businessCard } from "./businessCard";
