@@ -11,17 +11,13 @@ const Navbar = () => {
   const isScrolled = useScroll();
 
   return (
-    <header
-      className={`fixed left-0 top-0 z-50 w-full px-3 pt-3 transition-all duration-500 sm:px-4 sm:pt-4 ${
-        isScrolled ? "pt-2 sm:pt-3" : ""
-      }`}
-    >
+    <header className="pointer-events-none fixed left-0 top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4">
       <Container>
         <nav
-          className={`relative mx-auto flex h-[68px] items-center justify-between rounded-2xl px-4 transition-all duration-500 sm:h-[72px] sm:px-5 ${
+          className={`pointer-events-auto relative mx-auto flex h-[64px] items-center justify-between rounded-2xl px-4 transition-all duration-500 sm:h-[68px] sm:px-5 ${
             isScrolled
-              ? "border border-[#111111]/10 bg-white/75 shadow-[0_16px_50px_rgba(17,17,17,0.08)] backdrop-blur-xl"
-              : "border border-transparent bg-white/90 backdrop-blur-sm"
+              ? "border border-[#111111]/10 bg-white/72 shadow-[0_18px_55px_rgba(17,17,17,0.12)] backdrop-blur-2xl"
+              : "border border-[#111111]/[0.06] bg-white/55 shadow-[0_10px_35px_rgba(17,17,17,0.04)] backdrop-blur-xl"
           }`}
         >
           <NavLogo />

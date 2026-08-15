@@ -15,7 +15,7 @@ const HomeHero = () => {
   return (
     <section className="bg-[#f4f3ef] px-3 py-3 text-white sm:px-4 sm:py-4">
       <Container>
-        <div className="relative flex min-h-[calc(100svh-1.5rem)] items-center overflow-hidden rounded-[28px] bg-[#111111] px-6 py-8 shadow-[0_30px_80px_rgba(0,0,0,0.12)] sm:min-h-[calc(100svh-2rem)] sm:px-8 md:px-12 lg:px-16">
+        <div className="relative flex min-h-[calc(100svh-1.5rem)] items-center overflow-hidden rounded-[28px] bg-[#111111] px-6 pb-8 pt-24 shadow-[0_30px_80px_rgba(0,0,0,0.12)] sm:min-h-[calc(100svh-2rem)] sm:px-8 sm:pb-8 sm:pt-24 md:px-12 md:pt-24 lg:px-16 lg:pt-24">
           {/* Logo en arrière-plan */}
           <div
             aria-hidden="true"
@@ -95,7 +95,7 @@ const HomeHero = () => {
                 ease: "easeOut",
                 delay: 0.12,
               }}
-              className="relative mx-auto h-[300px] w-full max-w-[470px] sm:h-[360px] md:h-[420px] lg:h-[500px]"
+              className="relative mx-auto h-[260px] w-full max-w-[470px] sm:h-[320px] md:h-[390px] lg:h-[450px]"
             >
               {/* Numéro discret */}
               <span className="absolute right-[5%] top-[8%] text-[5rem] font-light leading-none tracking-[-0.08em] text-white/[0.08] sm:text-[7rem]">

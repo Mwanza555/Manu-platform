@@ -26,14 +26,14 @@ const MobileMenu = () => {
       {open && (
         <div className="absolute right-0 top-[58px] z-40 w-[calc(100vw-2rem)] max-w-[360px] overflow-hidden rounded-2xl border border-[#111111]/10 bg-[#f4f3ef]/95 shadow-[0_25px_70px_rgba(17,17,17,0.12)] backdrop-blur-xl">
           <div className="p-3">
-            <div className="border-b border-[#111111]/10 px-3 pb-4 pt-2">
+            {/* <div className="border-b border-[#111111]/10 px-3 pb-4 pt-2">
               <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#111111]/35">
                 Navigation
               </span>
-            </div>
+            </div> */}
 
             <ul className="py-2">
-              {navigation.map((item, index) => (
+              {navigation.map((item) => (
                 <li key={item.href}>
                   <NavLink
                     to={item.href}
@@ -50,9 +50,6 @@ const MobileMenu = () => {
                     {({ isActive }) => (
                       <>
                         <span className="flex items-center gap-3">
-                          <span className="text-[9px] opacity-35">
-                            0{index + 1}
-                          </span>
 
                           {item.label}
                         </span>
@@ -64,7 +61,6 @@ const MobileMenu = () => {
                               : "-translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-50"
                           }`}
                         >
-                          ↗
                         </span>
                       </>
                     )}
