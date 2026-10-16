@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import Container from "../ui/Container";
+import ResponsiveImage from "../ui/ResponsiveImage";
 
 const fadeUp = {
   hidden: {
@@ -30,9 +31,15 @@ const HomeAbout = () => {
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-[#deddd8]">
               {/* Remplacer par la vraie photo de Manu */}
-              <img
-                src="/manu.PNG"
+              <ResponsiveImage
+                basePath="/media/profile/manu"
+                widths={[480, 768, 960]}
+                sizes="(min-width: 640px) 480px, calc(100vw - 24px)"
                 alt="Manu, designer graphique"
+                width={960}
+                height={1200}
+                loading="lazy"
+                pictureClassName="block h-full w-full"
                 className="h-full w-full object-cover grayscale"
               />
 
@@ -70,47 +77,47 @@ const HomeAbout = () => {
             </div>
 
             <h2 className="max-w-3xl text-[clamp(2.6rem,5vw,5.5rem)] font-semibold leading-[0.92] tracking-[-0.065em]">
-              Donner une
+              Une vision claire,
               <br />
               <span className="text-[#111111]/35">
-                identité aux idées.
+                une collaboration proche.
               </span>
             </h2>
 
             <p className="mt-8 max-w-xl text-base leading-8 text-[#111111]/60 md:text-lg">
-              Je suis designer graphique basé à Kinshasa. Je crée des identités 
-              visuelles et des supports graphiques qui donnent aux marques une 
-              présence forte, cohérente et mémorable.
+              Je suis Manu, designer graphique basé à Kinshasa. J’accompagne
+              chaque projet avec écoute et intention pour transformer une idée
+              en un langage visuel juste, cohérent et facile à faire vivre.
             </p>
 
             <div className="mt-10 grid max-w-xl grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#111111]/10 bg-[#111111]/10">
               <div className="bg-[#f4f3ef] p-5 sm:p-6">
                 <p className="text-2xl font-semibold tracking-[-0.04em]">
-                  Brand
+                  Écoute
                 </p>
 
                 <p className="mt-1 text-xs text-[#111111]/40">
-                  Identité visuelle
+                  Comprendre le besoin
                 </p>
               </div>
 
               <div className="bg-[#f4f3ef] p-5 sm:p-6">
                 <p className="text-2xl font-semibold tracking-[-0.04em]">
-                  Graphic
+                  Intention
                 </p>
 
                 <p className="mt-1 text-xs text-[#111111]/40">
-                  Design graphique
+                  Donner une direction
                 </p>
               </div>
             </div>
 
             <Link
-              to="/portfolio"
+              to="/about"
               className="group mt-9 inline-flex w-fit items-center gap-3 text-sm font-semibold"
             >
               <span className="border-b border-[#111111]/30 pb-1 transition-colors group-hover:border-[#111111]">
-                Découvrir mon univers
+                En savoir plus sur mon approche
               </span>
             </Link>
           </motion.div>

@@ -3,16 +3,16 @@ import type { HomeHeroContent } from "../../types";
 export const homeHero: HomeHeroContent = {
   label: "Studio créatif indépendant",
   discipline: "Design graphique & direction artistique",
-  title: "Donner vie à vos idées.",
-  accentWord: "idées",
+  title: "Donner du poids à votre marque.",
+  accentWord: "marque",
   description:
-    "Designer graphique passionné, Manu aide les marques à raconter leur histoire à travers des identités visuelles fortes et des expériences mémorables.",
+    "J’aide les marques et les projets ambitieux à transformer leurs idées en identités visuelles claires, cohérentes et mémorables.",
   primaryCta: {
-    label: "Voir mon portfolio →",
+    label: "Découvrir les projets →",
     href: "/portfolio",
   },
   secondaryCta: {
-    label: "Parler de mon projet",
+    label: "Parler de ma marque",
     href: "/contact",
   },
   visual: {

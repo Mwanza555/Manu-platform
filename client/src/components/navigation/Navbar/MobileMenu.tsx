@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { NavLink, Link } from "react-router-dom";
 
 import { navigation } from "./navigation";
+import ResponsiveImage from "../../ui/ResponsiveImage";
 
 const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,6 @@ const MobileMenu = () => {
                     {({ isActive }) => (
                       <>
                         <span className="flex items-center gap-3">
-
                           {item.label}
                         </span>
 
@@ -60,8 +60,7 @@ const MobileMenu = () => {
                               ? "translate-x-0 opacity-100"
                               : "-translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-50"
                           }`}
-                        >
-                        </span>
+                        ></span>
                       </>
                     )}
                   </NavLink>
@@ -78,7 +77,16 @@ const MobileMenu = () => {
                 <span>Parlons de votre projet</span>
 
                 <span className="flex size-7 items-center justify-center rounded-full bg-white text-[#111111] transition-transform duration-300 group-hover:rotate-45">
-                  <img src="/manu_sans_titre_N.png" alt="" />
+                  <ResponsiveImage
+                    basePath="/media/brand/manu-sans-titre-n"
+                    widths={[96, 512, 1200]}
+                    sizes="28px"
+                    alt=""
+                    width={96}
+                    height={105}
+                    loading="lazy"
+                    className="h-full w-full object-contain"
+                  />
                 </span>
               </Link>
             </div>

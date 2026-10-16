@@ -1,5 +1,3 @@
-import Container from "../../ui/Container";
-
 import NavLogo from "./NavLogo";
 import NavLinks from "./NavLinks";
 import NavActions from "./NavActions";
@@ -11,13 +9,13 @@ const Navbar = () => {
   const isScrolled = useScroll();
 
   return (
-    <header className="pointer-events-none fixed left-0 top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4">
-      <Container>
+    <header className="pointer-events-none fixed left-0 top-0 z-50 w-full px-3 pt-2 sm:px-4 sm:pt-3">
+      <div className="mx-auto w-full max-w-7xl md:px-5 lg:px-7">
         <nav
           className={`pointer-events-auto relative mx-auto flex h-[64px] items-center justify-between rounded-2xl px-4 transition-all duration-500 sm:h-[68px] sm:px-5 ${
             isScrolled
-              ? "border border-[#111111]/10 bg-white/72 shadow-[0_18px_55px_rgba(17,17,17,0.12)] backdrop-blur-2xl"
-              : "border border-[#111111]/[0.06] bg-white/55 shadow-[0_10px_35px_rgba(17,17,17,0.04)] backdrop-blur-xl"
+              ? "border border-white/75 bg-white/90 shadow-[0_18px_55px_rgba(17,17,17,0.12)] backdrop-blur-2xl"
+              : "border border-white/70 bg-white/85 shadow-[0_10px_35px_rgba(17,17,17,0.08)] backdrop-blur-xl"
           }`}
         >
           <NavLogo />
@@ -31,7 +29,7 @@ const Navbar = () => {
             <MobileMenu />
           </div>
         </nav>
-      </Container>
+      </div>
     </header>
   );
 };

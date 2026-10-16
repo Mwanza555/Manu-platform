@@ -23,7 +23,7 @@ const ProjectsPage = () => {
                 {project.title}
               </h2>
               <p className="mt-4 max-w-3xl leading-7 text-muted">
-                {project.summary}
+                {project.shortDescription}
               </p>
             </article>
           ))}

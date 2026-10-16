@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import ResponsiveImage from "../../ui/ResponsiveImage";
+
 const NavActions = () => {
   return (
     <Link
@@ -9,7 +11,16 @@ const NavActions = () => {
       <span>Parlons de votre projet</span>
 
       <span className="flex size-7 items-center justify-center rounded-full bg-white text-[#111111] transition-transform duration-300 group-hover:rotate-45">
-        <img src="/manu_sans_titre_N.png" alt="" />
+        <ResponsiveImage
+          basePath="/media/brand/manu-sans-titre-n"
+          widths={[96, 512, 1200]}
+          sizes="28px"
+          alt=""
+          width={96}
+          height={105}
+          loading="eager"
+          className="h-full w-full object-contain"
+        />
       </span>
     </Link>
   );

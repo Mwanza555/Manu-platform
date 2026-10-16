@@ -2,11 +2,11 @@ import { useParams } from "react-router-dom";
 
 import Container from "../../../components/ui/Container";
 import Section from "../../../components/ui/Section";
-import { portfolioItems } from "../../../data";
+import { projects } from "../../../data";
 
 const ProjectPage = () => {
   const { slug } = useParams();
-  const item = portfolioItems.find((portfolioItem) => portfolioItem.slug === slug);
+  const item = projects.find((project) => project.slug === slug);
 
   return (
     <Section>

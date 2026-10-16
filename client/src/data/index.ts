@@ -1,3 +1,9 @@
 export { businessCard } from "./businessCard";
-export { portfolioItems, projects } from "./portfolio";
-export { contactInfo, homeHero, profile, services, socialLinks } from "./site";
+export { projects } from "./portfolio/projects";
+export {
+  contactInfo,
+  homeHero,
+  profile,
+  services,
+  socialLinks,
+} from "./site";

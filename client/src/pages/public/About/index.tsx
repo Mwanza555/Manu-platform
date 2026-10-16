@@ -1,22 +1,22 @@
-import Container from "../../../components/ui/Container";
-import Section from "../../../components/ui/Section";
-import { profile } from "../../../data";
+import AboutBelief from "../../../components/about/AboutBelief";
+import AboutClosing from "../../../components/about/AboutClosing";
+import AboutCollaboration from "../../../components/about/AboutCollaboration";
+import AboutHero from "../../../components/about/AboutHero";
+import AboutHuman from "../../../components/about/AboutHuman";
+import AboutPrinciples from "../../../components/about/AboutPrinciples";
+import AboutStory from "../../../components/about/AboutStory";
 
 const AboutPage = () => {
   return (
-    <Section>
-      <Container>
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.12em] text-muted">
-          À propos
-        </p>
-        <h1 className="max-w-3xl text-4xl font-semibold text-foreground">
-          {profile.name}, {profile.role}
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-          {profile.introduction}
-        </p>
-      </Container>
-    </Section>
+    <>
+      <AboutHero />
+      <AboutBelief />
+      <AboutStory />
+      <AboutPrinciples />
+      <AboutCollaboration />
+      <AboutHuman />
+      <AboutClosing />
+    </>
   );
 };
 

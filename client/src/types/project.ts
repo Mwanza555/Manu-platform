@@ -1,24 +1,32 @@
-export interface PortfolioItem {
-  id: string;
-  title: string;
-  slug: string;
-  category: string;
-  description: string;
-  image: string;
-  accent?: string;
-  tools: string[];
-  isPublished: boolean;
-}
-
 export interface Project {
   id: string;
-  title: string;
   slug: string;
-  summary: string;
-  description: string;
-  image: string;
+
+  title: string;
+  category: string;
   year: string;
-  client: string;
+
+  shortDescription: string;
+  description: string;
+
+  coverImage: string;
+  responsiveCover: {
+    basePath: string;
+    widths: number[];
+    width: number;
+    height: number;
+  };
+
+  gallery: ProjectImage[];
+
+  client?: string;
   services: string[];
-  isPublished: boolean;
+
+  featured?: boolean;
+}
+
+export interface ProjectImage {
+  src: string;
+  alt: string;
+  caption?: string;
 }

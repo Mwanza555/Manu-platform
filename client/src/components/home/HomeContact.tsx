@@ -41,16 +41,16 @@ const HomeContact = () => {
 
           {/* Titre */}
           <h2 className="mt-7 max-w-5xl text-[clamp(3.2rem,8vw,8rem)] font-semibold leading-[0.84] tracking-[-0.075em]">
-            Vous avez
+            Construisons
             <br />
-            <span className="text-white/35">une idée ?</span>
+            <span className="text-white/35">la suite ensemble.</span>
           </h2>
 
           <div className="mt-10 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
             <p className="max-w-md text-sm leading-7 text-white/45 md:text-base md:leading-8">
-              Que vous ayez déjà une vision précise ou simplement une idée à
-              faire évoluer, parlons-en. Je serai heureux de découvrir votre
-              projet.
+              Présentez-moi votre idée, votre contexte ou le défi que rencontre
+              votre marque. Nous verrons ensemble comment lui donner une
+              direction visuelle forte et cohérente.
             </p>
 
             <Link
@@ -60,19 +60,16 @@ const HomeContact = () => {
               <span className="leading-5">
                 Parlons
                 <br />
-                de votre
-                <br />
-                projet
-                <span className="ml-1 inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
-                  ↗
-                </span>
+                de votre projet
               </span>
             </Link>
           </div>
 
           {/* Ligne basse */}
           <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-5 text-[10px] uppercase tracking-[0.15em] text-white/25 sm:flex-row sm:items-center sm:justify-between">
-            <span>Design graphique · Identité visuelle · Direction artistique</span>
+            <span>
+              Design graphique · Identité visuelle · Direction artistique
+            </span>
 
             <span>Kinshasa — RDC</span>
           </div>

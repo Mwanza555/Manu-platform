@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import Container from "../ui/Container";
+import ResponsiveImage from "../ui/ResponsiveImage";
 
 const services = [
   {
@@ -10,28 +11,28 @@ const services = [
     title: "Identité visuelle",
     description:
       "Je construis des identités visuelles fortes et cohérentes qui permettent à une marque d'être reconnue et mémorisée.",
-    image: "/services/identite-visuelle.jpg",
+    image: "/media/services/identite-visuelle",
   },
   {
     number: "02",
     title: "Design graphique",
     description:
       "Je transforme les idées en compositions graphiques fortes, pensées pour attirer l'attention et transmettre un message.",
-    image: "/services/design-graphique.jpg",
+    image: "/media/services/design-graphique",
   },
   {
     number: "03",
     title: "Supports de communication",
     description:
       "Je conçois des supports adaptés aux besoins de chaque marque, du digital à l'impression.",
-    image: "/services/communication.jpg",
+    image: "/media/services/communication",
   },
   {
     number: "04",
     title: "Direction artistique",
     description:
       "Je donne une direction visuelle cohérente aux projets afin que chaque élément participe à la même histoire.",
-    image: "/services/direction-artistique.jpg",
+    image: "/media/services/direction-artistique",
   },
 ];
 
@@ -67,15 +68,15 @@ const HomeServices = () => {
             </div>
 
             <h2 className="mt-4 max-w-2xl text-[clamp(2.7rem,5.5vw,5.5rem)] font-semibold leading-[0.88] tracking-[-0.07em]">
-              Je donne
+              Ce que nous pouvons
               <br />
-              <span className="text-white/35">forme aux idées.</span>
+              <span className="text-white/35">construire ensemble.</span>
             </h2>
           </div>
 
           <p className="max-w-sm text-sm leading-7 text-white/45 md:text-right">
-            Des identités visuelles aux supports de communication, je crée des
-            univers graphiques pensés pour donner du caractère aux marques.
+            Une offre pensée pour rendre votre marque plus claire, plus
+            cohérente et plus reconnaissable à chaque point de contact.
           </p>
         </div>
 
@@ -96,15 +97,19 @@ const HomeServices = () => {
               transition={{ duration: 0.55, ease: "easeInOut" }}
               className="absolute hidden h-[300px] w-[215px] overflow-hidden rounded-[22px] border border-white/10 md:block"
             >
-              <img
-                src={
+              <ResponsiveImage
+                basePath={
                   services[
-                    activeIndex === 0
-                      ? services.length - 1
-                      : activeIndex - 1
+                    activeIndex === 0 ? services.length - 1 : activeIndex - 1
                   ].image
                 }
                 alt=""
+                widths={[480, 768, 1200]}
+                sizes="215px"
+                width={1200}
+                height={1800}
+                loading="lazy"
+                pictureClassName="block h-full w-full"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-black/25" />
@@ -138,15 +143,25 @@ const HomeServices = () => {
                 <div className="grid overflow-hidden rounded-[24px] border border-white/10 bg-white/[0.035] shadow-[0_25px_70px_rgba(0,0,0,0.22)] backdrop-blur-xl md:grid-cols-[0.9fr_1.1fr]">
                   {/* Image */}
                   <div className="relative aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[360px]">
-                    <motion.img
+                    <motion.div
                       key={currentService.image}
                       initial={{ scale: 1.06 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.7 }}
-                      src={currentService.image}
-                      alt={currentService.title}
                       className="h-full w-full object-cover"
-                    />
+                    >
+                      <ResponsiveImage
+                        basePath={currentService.image}
+                        widths={[480, 768, 1200]}
+                        sizes="(min-width: 768px) 306px, calc(100vw - 24px)"
+                        alt={currentService.title}
+                        width={1200}
+                        height={1800}
+                        loading="lazy"
+                        pictureClassName="block h-full w-full"
+                        className="h-full w-full object-cover"
+                      />
+                    </motion.div>
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
 
@@ -176,7 +191,7 @@ const HomeServices = () => {
                       className="group mt-7 inline-flex w-fit items-center gap-3 text-sm font-semibold"
                     >
                       <span className="border-b border-white/25 pb-1 transition-colors group-hover:border-white">
-                        Parlons de votre projet
+                        Discuter de ce besoin
                       </span>
                     </Link>
                   </div>
@@ -192,15 +207,19 @@ const HomeServices = () => {
               transition={{ duration: 0.55, ease: "easeInOut" }}
               className="absolute hidden h-[300px] w-[215px] overflow-hidden rounded-[22px] border border-white/10 md:block"
             >
-              <img
-                src={
+              <ResponsiveImage
+                basePath={
                   services[
-                    activeIndex === services.length - 1
-                      ? 0
-                      : activeIndex + 1
+                    activeIndex === services.length - 1 ? 0 : activeIndex + 1
                   ].image
                 }
                 alt=""
+                widths={[480, 768, 1200]}
+                sizes="215px"
+                width={1200}
+                height={1800}
+                loading="lazy"
+                pictureClassName="block h-full w-full"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-black/25" />
