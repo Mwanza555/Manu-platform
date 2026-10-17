@@ -24,7 +24,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "01",
     title: "Identité visuelle",
-    subtitle: "Branding — Projet sélectionné",
+    subtitle: "Aperçu temporaire — Identité visuelle",
     description:
       "Une identité pensée pour donner au projet une présence claire, forte et cohérente.",
     href: "/portfolio/identite-visuelle",
@@ -38,7 +38,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "02",
     title: "Univers de marque",
-    subtitle: "Identité visuelle — Exploration",
+    subtitle: "Aperçu temporaire — Exploration visuelle",
     description:
       "Un langage visuel capable de rendre la marque reconnaissable et mémorable.",
     href: "/portfolio",
@@ -52,7 +52,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "03",
     title: "Composition graphique",
-    subtitle: "Design graphique — Sélection",
+    subtitle: "Aperçu temporaire — Design graphique",
     description:
       "Des compositions conçues pour hiérarchiser le message et attirer l’attention.",
     href: "/portfolio",
@@ -66,7 +66,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "04",
     title: "Communication visuelle",
-    subtitle: "Supports de communication — Sélection",
+    subtitle: "Aperçu temporaire — Communication visuelle",
     description:
       "Une communication cohérente, du support numérique aux formats imprimés.",
     href: "/portfolio",
@@ -80,7 +80,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: "05",
     title: "Direction créative",
-    subtitle: "Direction artistique — Sélection",
+    subtitle: "Aperçu temporaire — Direction créative",
     description:
       "Une direction visuelle commune pour donner du caractère à chaque point de contact.",
     href: "/portfolio",

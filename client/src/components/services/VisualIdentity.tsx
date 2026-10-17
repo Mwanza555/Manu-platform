@@ -40,7 +40,7 @@ const VisualIdentity = () => {
             </span>
           </div>
           <span className="text-[10px] font-medium tracking-[0.18em] text-[#111111]/35">
-            03 — 01/04
+            03 — 01/03
           </span>
         </div>
 

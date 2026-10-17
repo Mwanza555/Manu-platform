@@ -4,7 +4,7 @@ export interface Project {
 
   title: string;
   category: string;
-  year: string;
+  year?: string;
 
   shortDescription: string;
   description: string;
@@ -23,6 +23,7 @@ export interface Project {
   services: string[];
 
   featured?: boolean;
+  demo?: boolean;
 }
 
 export interface ProjectImage {

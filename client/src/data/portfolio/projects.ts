@@ -1,103 +1,85 @@
 import type { Project } from "../../types/project";
 
+// Études temporaires : remplacer les visuels et les textes par les projets
+// documentés de Manu dès qu'ils seront disponibles.
 export const projects: Project[] = [
   {
-    id: "project-01",
+    id: "demo-identite",
     slug: "identite-visuelle",
-    title: "Identité visuelle",
-    category: "Branding",
-    year: "2025",
-
+    title: "Système d’identité",
+    category: "Identité visuelle",
     shortDescription:
-      "Une identité visuelle pensée pour donner au projet une présence forte et cohérente.",
-
+      "Une étude graphique autour d’un langage visuel simple, expressif et reconnaissable.",
     description:
-      "J'ai travaillé sur la direction visuelle de cette marque afin de construire un univers graphique cohérent, reconnaissable et adapté à son positionnement.",
-
-    coverImage: "/portfolio/project-01.png",
+      "Étude fictive créée pour prévisualiser la présentation d’un projet d’identité visuelle. Les images, le contexte et les choix de design seront remplacés par une réalisation documentée de Manu.",
+    coverImage: "/media/portfolio/demo-identite-1536.webp",
     responsiveCover: {
-      basePath: "/media/portfolio/project-01",
-      widths: [480, 960, 1600],
-      width: 1600,
-      height: 1745,
+      basePath: "/media/portfolio/demo-identite",
+      widths: [480, 960, 1536],
+      width: 1536,
+      height: 1024,
     },
-
     gallery: [
       {
-        src: "/portfolio/project-01.png",
-        alt: "Projet d'identité visuelle",
+        src: "/media/portfolio/demo-identite-1536.webp",
+        alt: "Étude fictive d’un système d’identité graphique noir, ivoire et bleu",
+        caption: "Visuel de démonstration — à remplacer par le projet réel.",
       },
     ],
-
-    client: "Nom du client",
-    services: ["Direction artistique", "Identité visuelle", "Design graphique"],
-
+    services: ["Identité visuelle"],
     featured: true,
+    demo: true,
   },
-
   {
-    id: "project-02",
-    slug: "direction-artistique",
-    title: "Direction artistique",
-    category: "Direction artistique",
-    year: "2025",
-
+    id: "demo-evenement",
+    slug: "visuels-evenementiels",
+    title: "Un temps fort, une image",
+    category: "Visuels événementiels",
     shortDescription:
-      "Un univers graphique construit autour d'une direction artistique forte.",
-
+      "Une étude d’affiche où formes, contraste et rythme donnent le ton d’un événement imaginaire.",
     description:
-      "J'ai développé une direction artistique permettant de donner au projet une personnalité visuelle distinctive et cohérente.",
-
-    coverImage: "/manu_complet_N.png",
+      "Étude fictive créée pour prévisualiser la présentation de visuels événementiels. Aucun événement réel n’est représenté ; le projet de Manu prendra sa place dès réception des éléments.",
+    coverImage: "/media/portfolio/demo-evenement-1536.webp",
     responsiveCover: {
-      basePath: "/media/brand/manu-complet-n",
-      widths: [320, 960, 1600],
-      width: 1600,
-      height: 937,
+      basePath: "/media/portfolio/demo-evenement",
+      widths: [480, 960, 1536],
+      width: 1536,
+      height: 1024,
     },
-
     gallery: [
       {
-        src: "/manu_complet_N.png",
-        alt: "Projet de direction artistique",
+        src: "/media/portfolio/demo-evenement-1536.webp",
+        alt: "Affiche événementielle fictive aux formes orange et bordeaux",
+        caption: "Visuel de démonstration — à remplacer par le projet réel.",
       },
     ],
-
-    client: "Nom du client",
-    services: ["Direction artistique", "Design graphique"],
-
-    featured: true,
+    services: ["Visuels événementiels"],
+    demo: true,
   },
-
   {
-    id: "project-03",
-    slug: "design-graphique",
-    title: "Design graphique",
-    category: "Graphic Design",
-    year: "2024",
-
+    id: "demo-contenu",
+    slug: "creation-contenu",
+    title: "Présence éditoriale",
+    category: "Création de contenu",
     shortDescription:
-      "Une approche graphique expressive et pensée pour renforcer l'identité du projet.",
-
+      "Une étude de contenus visuels cohérents, capables de varier sans perdre leur signature.",
     description:
-      "J'ai conçu différents éléments graphiques en cherchant à créer un langage visuel simple, impactant et cohérent.",
-
-    coverImage: "/manu_complet_B.png",
+      "Étude fictive créée pour prévisualiser la présentation d’une série de contenus visuels. Les créations de Manu et leur contexte réel remplaceront cet exemple temporaire.",
+    coverImage: "/media/portfolio/demo-contenu-1536.webp",
     responsiveCover: {
-      basePath: "/media/brand/manu-complet-b",
-      widths: [320, 960, 1600],
-      width: 1600,
-      height: 976,
+      basePath: "/media/portfolio/demo-contenu",
+      widths: [480, 960, 1536],
+      width: 1536,
+      height: 1024,
     },
-
     gallery: [
       {
-        src: "/manu_complet_B.png",
-        alt: "Projet de design graphique",
+        src: "/media/portfolio/demo-contenu-1536.webp",
+        alt: "Série fictive de compositions éditoriales vert foncé, ivoire et lavande",
+        caption: "Visuel de démonstration — à remplacer par le projet réel.",
       },
     ],
-
-    client: "Nom du client",
-    services: ["Design graphique", "Direction artistique"],
+    services: ["Création de contenu"],
+    demo: true,
   },
 ];

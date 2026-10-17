@@ -15,9 +15,14 @@ const ProjectsPage = () => {
 
         <div className="mt-10 grid gap-6">
           {projects.map((project) => (
-            <article key={project.id} className="border border-border bg-surface p-6">
+            <article
+              key={project.id}
+              className="border border-border bg-surface p-6"
+            >
               <p className="text-sm font-medium text-muted">
-                {project.year} · {project.client}
+                {project.demo
+                  ? "Étude fictive"
+                  : [project.year, project.client].filter(Boolean).join(" · ")}
               </p>
               <h2 className="mt-3 text-2xl font-semibold text-foreground">
                 {project.title}

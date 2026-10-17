@@ -6,7 +6,6 @@ export const profile: Profile = {
   headline: "Identités visuelles, supports de marque et expériences créatives.",
   introduction:
     "Manu accompagne les marques, entrepreneurs et équipes créatives avec une approche claire, précise et visuelle.",
-  location: "France",
   image: "/manu_sans_ecrit.png",
   stats: [
     { label: "Années d'expérience", value: "5+" },

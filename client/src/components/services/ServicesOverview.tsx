@@ -21,15 +21,8 @@ const services = [
     number: "03",
     title: "Création de contenu",
     description:
-      "Des contenus pensés pour porter un message et faire vivre une présence visuelle au fil du temps.",
+      "Des contenus visuels pensés pour porter un message et faire vivre une présence reconnaissable au fil du temps.",
     context: "Messages & canaux",
-  },
-  {
-    number: "04",
-    title: "Vidéo",
-    description:
-      "L’image en mouvement pour raconter une idée, révéler une personne ou prolonger l’émotion d’un moment.",
-    context: "Image en mouvement",
   },
 ];
 
@@ -64,13 +57,13 @@ const ServicesOverview = () => {
               <span className="block text-[#111111]/32">de prendre forme.</span>
             </h2>
             <p className="max-w-md text-sm leading-7 text-[#111111]/55 md:text-base md:leading-8 lg:justify-self-end lg:pb-2">
-              Quatre expertises pour construire une présence visuelle juste, du
-              premier signe à l’image en mouvement.
+              Trois expertises pour construire une présence visuelle juste, de
+              l’identité aux contenus qui la font vivre.
             </p>
           </div>
         </motion.div>
 
-        <div className="mt-14 grid border-t border-[#111111]/14 sm:mt-20 md:grid-cols-2">
+        <div className="mt-14 grid border-t border-[#111111]/14 sm:mt-20 lg:grid-cols-3">
           {services.map((service, index) => (
             <motion.article
               key={service.number}
@@ -79,14 +72,14 @@ const ServicesOverview = () => {
               viewport={{ once: true, amount: 0.25 }}
               transition={{
                 duration: 0.55,
-                delay: (index % 2) * 0.08,
+                delay: index * 0.06,
                 ease: "easeOut",
               }}
-              className={`flex min-h-[285px] flex-col border-b border-[#111111]/14 py-8 sm:min-h-[320px] sm:py-10 md:min-h-[350px] ${index % 2 === 0 ? "md:pr-10 lg:pr-16" : "md:border-l md:border-[#111111]/14 md:pl-10 lg:pl-16"}`}
+              className={`flex min-h-[285px] flex-col border-b border-[#111111]/14 py-8 sm:min-h-[320px] sm:py-10 lg:min-h-[350px] lg:border-b-0 ${index === 0 ? "lg:pr-8" : "lg:border-l lg:border-[#111111]/14 lg:pl-8"} ${index === 1 ? "lg:pr-8" : ""}`}
             >
               <div className="flex items-center justify-between gap-5">
                 <span className="text-[10px] font-semibold tracking-[0.2em] text-[#111111]/35">
-                  {service.number} / 04
+                  {service.number} / 03
                 </span>
                 <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-[#111111]/38">
                   {service.context}
@@ -94,7 +87,7 @@ const ServicesOverview = () => {
               </div>
 
               <div className="mt-auto pt-12">
-                <h3 className="max-w-[520px] text-[clamp(2.2rem,4.2vw,4.8rem)] font-medium leading-[0.94] tracking-[-0.065em]">
+                <h3 className="max-w-[520px] text-[clamp(2.2rem,3.3vw,4.2rem)] font-medium leading-[0.94] tracking-[-0.065em]">
                   {service.title}
                 </h3>
                 <p className="mt-5 max-w-[430px] text-sm leading-7 text-[#111111]/55 sm:text-base sm:leading-8">

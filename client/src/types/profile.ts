@@ -12,7 +12,7 @@ export interface Profile {
   heroAccent?: string;
   heroLabel?: string;
   introduction: string;
-  location: string;
+  location?: string;
   image: string;
   stats: ProfileStat[];
 }

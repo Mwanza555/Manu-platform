@@ -6,7 +6,6 @@ const offerings = [
   "Identité visuelle",
   "Visuels événementiels",
   "Création de contenu",
-  "Vidéo",
 ];
 
 const ServicesHero = () => {
@@ -43,8 +42,8 @@ const ServicesHero = () => {
             </h1>
 
             <p className="mt-4 max-w-[510px] text-xs leading-6 text-white/55 sm:mt-6 sm:text-sm sm:leading-7 md:text-base md:leading-8">
-              De l’identité d’une marque à ses contenus et ses images en
-              mouvement, je donne forme à ce que vous souhaitez exprimer.
+              Je conçois des identités et des visuels qui rendent vos idées
+              claires, reconnaissables et mémorables.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-3 sm:mt-8">
@@ -82,10 +81,10 @@ const ServicesHero = () => {
           >
             <div className="flex items-center justify-between gap-5 border-b border-white/15 pb-3 sm:pb-5">
               <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/40">
-                Quatre façons de créer
+                Trois façons de créer
               </span>
               <span className="text-[10px] font-medium tracking-[0.16em] text-white/30">
-                01 — 04
+                01 — 03
               </span>
             </div>
 
@@ -106,7 +105,7 @@ const ServicesHero = () => {
             </ol>
 
             <div className="mt-4 flex items-center justify-between text-[9px] font-semibold uppercase tracking-[0.18em] text-white/30 sm:mt-6">
-              <span>Du signe à l’image en mouvement</span>
+              <span>De l’identité aux contenus visuels</span>
               <span
                 aria-hidden="true"
                 className="size-2 rounded-full bg-white/35"
